@@ -4,8 +4,8 @@
  * @author Simone Manini / http://daron1337.github.io
  * @author Luca Antiga 	/ http://lantiga.github.io
 
- 
- * @author Jon Lim / http://jonlim.ca
+ ** three-trackballcontrols module
+ ** @author Jon Lim / http://jonlim.ca
  */
 
 var THREE = window.THREE || require('three');
