@@ -1,0 +1,26 @@
+{
+  "name": "three-trackballcontrols",
+  "version": "0.0.1",
+  "description": "A module for using THREE.TrackballControls with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonLim/three-trackballcontrols.git"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "trackball",
+    "controls",
+    "webGL"
+  ],
+  "author": "Jon Lim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonLim/three-trackballcontrols/issues"
+  },
+  "homepage": "https://github.com/JonLim/three-trackballcontrols#readme"
+}
