@@ -19,7 +19,7 @@ Currently `v0.0.1`
 Assuminng that you're using `three-trackballcontrols` in the same code as `three`,
 all you have to do is require it right after `three`.
 
-`var THREE = require('three');`
+`var THREE = require('three');`  
 `var TrackballControls = require('three-trackballcontrols');`
 
 And when you're setting up your camera:
