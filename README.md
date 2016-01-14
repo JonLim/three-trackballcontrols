@@ -2,8 +2,6 @@
 
 A module for using THREE.TrackballControls with nodejs
 
-Currently `v0.0.1`
-
 # Setup and Installation
 
 ## Pre-requisites
