@@ -10,7 +10,7 @@
 
 var THREE = window.THREE || require('three');
 
-module.exports = TrackballControls = (function ( object, domElement ) {
+module.exports = TrackballControls = function ( object, domElement ) {
 
 	var _this = this;
 	var STATE = { NONE: - 1, ROTATE: 0, ZOOM: 1, PAN: 2, TOUCH_ROTATE: 3, TOUCH_ZOOM_PAN: 4 };
@@ -633,7 +633,8 @@ module.exports = TrackballControls = (function ( object, domElement ) {
 	// force an update at start
 	this.update();
 
-})();
+};
 
-THREE.TrackballControls.prototype = Object.create( THREE.EventDispatcher.prototype );
-THREE.TrackballControls.prototype.constructor = THREE.TrackballControls;
+function preventEvent( event ) { event.preventDefault(); }
+
+TrackballControls.prototype = Object.create( THREE.EventDispatcher.prototype );
