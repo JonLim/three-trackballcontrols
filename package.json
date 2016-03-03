@@ -1,6 +1,6 @@
 {
   "name": "three-trackballcontrols",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module for using THREE.TrackballControls with nodejs",
   "main": "index.js",
   "dependencies": {
