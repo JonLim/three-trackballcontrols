@@ -1,6 +1,8 @@
 # three-trackballcontrols
 
-![](https://david-dm.org/jonlim/three-trackballcontrols.svg)
+![NPM](https://nodei.co/npm/three-trackballcontrols.png)
+
+![Dependency Badge](https://david-dm.org/jonlim/three-trackballcontrols.svg)
 
 A module for using THREE.TrackballControls with nodejs
 
