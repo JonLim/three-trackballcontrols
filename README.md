@@ -1,6 +1,6 @@
 # three-trackballcontrols
 
-![]()https://david-dm.org/jonlim/three-trackballcontrols.svg
+![](https://david-dm.org/jonlim/three-trackballcontrols.svg)
 
 A module for using THREE.TrackballControls with nodejs
 
