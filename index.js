@@ -10,6 +10,7 @@
 
 var THREE = window.THREE || require('three');
 
+var TrackballControls;
 module.exports = TrackballControls = function ( object, domElement ) {
 
 	var _this = this;
