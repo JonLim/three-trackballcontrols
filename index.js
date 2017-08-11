@@ -39,6 +39,11 @@ module.exports = TrackballControls = function ( object, domElement ) {
 	this.minDistance = 0;
 	this.maxDistance = Infinity;
 
+	/**
+	 * `KeyboardEvent.keyCode` values which should trigger the different 
+	 * interaction states. Each element can be a single code or an array
+	 * of codes. All elements are required.
+	 */
 	this.keys = [ 65 /*A*/, 83 /*S*/, 68 /*D*/ ];
 
 	// internals
@@ -356,6 +361,25 @@ module.exports = TrackballControls = function ( object, domElement ) {
 
 	};
 
+	// helpers
+
+	/**
+	 * Checks if the pressed key is any of the configured modifier keys for
+	 * a specified behavior.
+	 * 
+	 * @param {number | number[]} keys 
+	 * @param {number} key 
+	 * 
+	 * @returns {boolean} `true` if `keys` contains or equals `key`
+	 */
+	function containsKey(keys, key) {
+		if (Array.isArray(keys)) {
+			return keys.indexOf(key) !== -1;
+		} else {
+			return keys === key;
+		}
+	}
+
 	// listeners
 
 	function keydown( event ) {
@@ -370,15 +394,15 @@ module.exports = TrackballControls = function ( object, domElement ) {
 
 			return;
 
-		} else if ( event.keyCode === _this.keys[ STATE.ROTATE ] && ! _this.noRotate ) {
+		} else if ( containsKey( _this.keys[ STATE.ROTATE ], event.keyCode ) && ! _this.noRotate ) {
 
 			_state = STATE.ROTATE;
 
-		} else if ( event.keyCode === _this.keys[ STATE.ZOOM ] && ! _this.noZoom ) {
+		} else if ( containsKey( _this.keys[ STATE.ZOOM ], event.keyCode ) && ! _this.noZoom ) {
 
 			_state = STATE.ZOOM;
 
-		} else if ( event.keyCode === _this.keys[ STATE.PAN ] && ! _this.noPan ) {
+		} else if ( containsKey( _this.keys[ STATE.PAN ], event.keyCode ) && ! _this.noPan ) {
 
 			_state = STATE.PAN;
 
