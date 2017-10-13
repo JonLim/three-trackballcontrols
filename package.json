@@ -3,8 +3,8 @@
   "version": "0.0.6",
   "description": "A module for using THREE.TrackballControls with nodejs",
   "main": "index.js",
-  "dependencies": {
-    "three": "^0.87.1"
+  "peerDependencies": {
+    "three": "^0.86.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
