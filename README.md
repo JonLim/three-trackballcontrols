@@ -1,6 +1,6 @@
 # three-trackballcontrols
 
-![NPM](https://nodei.co/npm/three-trackballcontrols.png)
+[![NPM](https://nodei.co/npm/three-trackballcontrols.png)](https://www.npmjs.com/package/three-trackballcontrols)
 
 ![Dependency Badge](https://david-dm.org/jonlim/three-trackballcontrols.svg)
 

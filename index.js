@@ -5,7 +5,7 @@
  * @author Luca Antiga 	/ http://lantiga.github.io
 
  ** three-trackballcontrols module
- ** @author Jon Lim / http://jonlim.ca
+ ** @author Jon Lim / https://jonlim.ca
  */
 
 var THREE = window.THREE || require('three');
