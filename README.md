@@ -20,7 +20,7 @@ Example was using `three.js` + `three-trackballcontrols` inside of a very simple
 
 ```javascript
 import * as THREE from 'three';
-import * as TrackballControls from 'three-trackballcontrols';
+import TrackballControls from 'three-trackballcontrols';
 
 // Assumes there is a `camera` and `renderer` initialized.
 const controls = new TrackballControls(camera, renderer.domElement);
@@ -45,7 +45,7 @@ Example uses [JSDelivr](https://www.jsdelivr.com/package/npm/three-trackballcont
 
 ```html
 <script type="module">
-  import * as TrackballControls from 'https://cdn.jsdelivr.net/npm/three-trackballcontrols@0.0.8/index.min.js';
+  import TrackballControls from 'https://cdn.jsdelivr.net/npm/three-trackballcontrols@0.0.8/index.min.js';
 
   // Assumes that a `camera` and `renderer` initialized.
   const controls = new TrackballControls(camera, renderer.domElement);
