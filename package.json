@@ -3,6 +3,7 @@
   "version": "0.9.0",
   "description": "A module for using TrackballControls for three.js with NodeJS.",
   "main": "index.js",
+  "module": "index.mjs",
   "peerDependencies": {
     "three": ">= 0.86 <= 1.0"
   },
